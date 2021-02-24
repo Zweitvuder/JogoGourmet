@@ -19,9 +19,11 @@ public class JogoGourmet extends JFrame {
     public void createGame() {
         FinalNode lasagnaNode = new FinalNode();
         lasagnaNode.setQuestion("O prato que você pensou é Lasanha?");
+        lasagnaNode.setName("Lasanha");
 
         FinalNode chocolateCakeNode = new FinalNode();
         chocolateCakeNode.setQuestion("O prato que você pensou é Bolo de Chocolate?");
+        chocolateCakeNode.setName("Bolo de Chocolate");
 
         rootNode = new Node();
         rootNode.setQuestion("O prato que você pensou é massa?");

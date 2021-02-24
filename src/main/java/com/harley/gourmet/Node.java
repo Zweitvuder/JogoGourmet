@@ -5,6 +5,7 @@ import javax.swing.*;
 public class Node {
     protected String question;
     protected Node parentNode, yesNode, noNode;
+    protected boolean isYesNode;
 
     public void setQuestion(String q) {
         question = q;
@@ -17,11 +18,13 @@ public class Node {
     public void setYesNode(Node yNode) {
         yesNode = yNode;
         yesNode.setParentNode(this);
+        yesNode.isYesNode = true;
     }
 
     public void setNoNode(Node nNode) {
         noNode = nNode;
         noNode.setParentNode(this);
+        noNode.isYesNode = false;
     }
 
     public void makeQuestion() {
