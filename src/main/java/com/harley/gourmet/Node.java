@@ -28,10 +28,10 @@ public class Node {
     }
 
     public void makeQuestion() {
-        boolean isYes = JOptionPane.showConfirmDialog(JogoGourmet.INSTANCE, question,
+        boolean positive = JOptionPane.showConfirmDialog(JogoGourmet.INSTANCE, question,
                 "Confirm", JOptionPane.YES_NO_OPTION) == 0;
 
-        if (isYes) {
+        if (positive) {
             yesNode.makeQuestion();
         } else {
             noNode.makeQuestion();

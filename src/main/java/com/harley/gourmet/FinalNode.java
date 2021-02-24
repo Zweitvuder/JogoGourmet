@@ -11,10 +11,10 @@ public class FinalNode extends Node {
 
     @Override
     public void makeQuestion() {
-        boolean isYes = JOptionPane.showConfirmDialog(JogoGourmet.INSTANCE, question,
+        boolean positive = JOptionPane.showConfirmDialog(JogoGourmet.INSTANCE, question,
                 "Confirm", JOptionPane.YES_NO_OPTION) == 0;
 
-        if (isYes) {
+        if (positive) {
             JOptionPane.showMessageDialog(JogoGourmet.INSTANCE, "Acertei de novo!",
                     "Jogo Gourmet", JOptionPane.INFORMATION_MESSAGE);
         } else {
